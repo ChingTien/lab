@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.local
+data/
+.sites-runtime/
+*.db
+*.db-shm
+*.db-wal

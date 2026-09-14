@@ -1,0 +1,14 @@
+services:
+  dialogue:
+    build: .
+    ports:
+      - "8787:8787"
+    environment:
+      ADMIN_INITIAL_PASSWORD: ${ADMIN_INITIAL_PASSWORD:?Set a strong initial password}
+      CORS_ORIGIN: ${CORS_ORIGIN:-}
+      DB_PATH: /data/value-dialogue.db
+    volumes:
+      - dialogue_data:/data
+
+volumes:
+  dialogue_data:
