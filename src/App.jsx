@@ -46,7 +46,7 @@ export default function App() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (password === '1234') {
+    if (password.trim() === '1234') {
       setStep('admin_edit');
     } else {
       alert('密碼錯誤！預設密碼為 1234');
