@@ -1,0 +1,2 @@
+# Copy to .dev.vars for local Worker testing. Never commit the real file.
+ADMIN_INITIAL_PASSWORD=change-this-to-a-long-local-password

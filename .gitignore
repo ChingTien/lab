@@ -4,6 +4,8 @@ dist/
 .env.local
 data/
 .sites-runtime/
+.wrangler/
+.dev.vars
 *.db
 *.db-shm
 *.db-wal

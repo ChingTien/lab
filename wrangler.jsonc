@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "value-dialogue-api",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-09-15",
+  "workers_dev": true,
+  "vars": {
+    "CORS_ORIGIN": "https://chingtien.github.io"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "value-dialogue",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
